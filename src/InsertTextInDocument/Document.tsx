@@ -10,12 +10,12 @@ export const Document: FC<Props> = ({ texts }) => {
       className="
       mt-10 lg:mt-0
       ml-0 lg:ml-10
+      w-[400px]
     "
     >
       <p
         className="
-        text-lg text-lime font-bold text-gray-800
-        w-[400px]
+        text-lg text-lime font-bold text-gray-800 mb-2
       "
       >
         Document
@@ -24,6 +24,7 @@ export const Document: FC<Props> = ({ texts }) => {
         className="
         border-sm border-[1.9px] rounded-md border-gray-300
         px-9 py-10
+        shadow-md
       "
       >
         {texts.length > 0 ? (

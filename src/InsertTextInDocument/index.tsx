@@ -17,7 +17,7 @@ export const InsertTextInDocument = () => {
     <div className='
       flex flex-col justify-center items-center
       mt-5 p-2
-      lg:flex-row
+      lg:flex-row lg:items-start
     '>
       <TextInput
         text={textInput}
