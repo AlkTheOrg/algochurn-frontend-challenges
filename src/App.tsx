@@ -1,13 +1,15 @@
 import './index.css'
 import { InsertTextInDocument } from './InsertTextInDocument'
 import { SelectAllCheckboxes } from './SelectAllCheckboxes';
+import { TypeWriterEffect } from './TypeWriterEffect';
 import { UseOutsideClickDemo } from './useOutsideClick';
 
 function App() {
   const components = [
     InsertTextInDocument,
     SelectAllCheckboxes,
-    UseOutsideClickDemo
+    UseOutsideClickDemo,
+    TypeWriterEffect
   ]
   if (components.length === 0) return null;
   // const SelectedComponent = components[2];
