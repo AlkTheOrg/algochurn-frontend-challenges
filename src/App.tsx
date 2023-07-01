@@ -1,9 +1,10 @@
-import './App.css'
+import './index.css'
+import { InsertTextInDocument } from './InsertTextInDocument'
 
 function App() {
   return (
     <>
-      <h1>init</h1>
+      <InsertTextInDocument />
     </>
   )
 }
