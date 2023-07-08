@@ -1,6 +1,7 @@
 import { CommandPaletteApp } from './CommandPaletteApp';
 import './index.css'
 import { InsertTextInDocument } from './InsertTextInDocument'
+import { LinkPreviewerApp } from './LinkPreviewerApp';
 import { SelectAllCheckboxes } from './SelectAllCheckboxes';
 import { TypeWriterEffect } from './TypeWriterEffect';
 import { UseOutsideClickDemo } from './useOutsideClick';
@@ -11,7 +12,8 @@ function App() {
     SelectAllCheckboxes,
     UseOutsideClickDemo,
     TypeWriterEffect,
-    CommandPaletteApp
+    CommandPaletteApp,
+    LinkPreviewerApp
   ]
   if (components.length === 0) return null;
   // const SelectedComponent = components[2];
