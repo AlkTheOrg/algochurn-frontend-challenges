@@ -1,3 +1,4 @@
+import { CommandPaletteApp } from './CommandPaletteApp';
 import './index.css'
 import { InsertTextInDocument } from './InsertTextInDocument'
 import { SelectAllCheckboxes } from './SelectAllCheckboxes';
@@ -9,7 +10,8 @@ function App() {
     InsertTextInDocument,
     SelectAllCheckboxes,
     UseOutsideClickDemo,
-    TypeWriterEffect
+    TypeWriterEffect,
+    CommandPaletteApp
   ]
   if (components.length === 0) return null;
   // const SelectedComponent = components[2];
