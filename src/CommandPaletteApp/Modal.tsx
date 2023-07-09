@@ -20,8 +20,7 @@ export const Modal: FC<Props> = ({
         onClose();
       }
     };
-
-    document.addEventListener('click', listenClickOutside);
+    if (isOpen) document.addEventListener('click', listenClickOutside);
     return () => document.removeEventListener('click', listenClickOutside);
   }, [isOpen, onClose])
 
