@@ -4,7 +4,7 @@ import { ReusableModal } from '.';
 export const ReusableModalDemo = () => {
   const [isOpen, setIsOpen] = useState(true);
   return (
-    <div className="w-screen h-screen flex justify-center items-center">
+    <div className="w-screen h-screen fixed flex justify-center items-center">
       <button
         type="button"
         className="cursor-pointer bg-black text-white p-24 text-6xl rounded-xl"

@@ -39,7 +39,7 @@ export const ReusableModal: FC<Props> = ({ isOpen, onClose, children, customModa
 
   return createPortal(
     <div className={`
-      h-screen w-screen bg-black/[.5]
+      h-screen w-screen bg-black/[.5] fixed
       flex justify-center align-middle items-center
     `}>
       <div ref={modalRef} className={customModalClass || ''}>
