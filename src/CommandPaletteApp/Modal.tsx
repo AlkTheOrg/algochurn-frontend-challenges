@@ -28,7 +28,7 @@ export const Modal: FC<Props> = ({
   return (
     <div className={`
       h-screen bg-indigo-700/[.5] ${displayStyle}
-      absolute m-auto left-0 right-0 top-0
+      fixed m-auto left-0 right-0 top-0
       flex justify-center align-middle items-center
     `}>
       <div ref={modalRef} className="w-50 h-50">

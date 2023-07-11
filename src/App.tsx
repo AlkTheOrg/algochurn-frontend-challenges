@@ -1,7 +1,9 @@
 import { CommandPaletteApp } from './CommandPaletteApp';
 import './index.css'
 import { InsertTextInDocument } from './InsertTextInDocument'
+import { LightBoxGallery } from './LightBoxGallery';
 import { LinkPreviewerApp } from './LinkPreviewerApp';
+import { ReusableModalDemo } from './ReusableModal/ReusableModalDemo';
 import { SelectAllCheckboxes } from './SelectAllCheckboxes';
 import { TypeWriterEffect } from './TypeWriterEffect';
 import { UseOutsideClickDemo } from './useOutsideClick';
@@ -13,7 +15,9 @@ function App() {
     UseOutsideClickDemo,
     TypeWriterEffect,
     CommandPaletteApp,
-    LinkPreviewerApp
+    LinkPreviewerApp,
+    ReusableModalDemo,
+    LightBoxGallery
   ]
   if (components.length === 0) return null;
   // const SelectedComponent = components[2];
