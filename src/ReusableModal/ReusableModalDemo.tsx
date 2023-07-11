@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { ReusableModal } from '.';
 
-export const ReusableModalDemo = () => {
+export const App = () => {
   const [isOpen, setIsOpen] = useState(true);
   return (
     <div className="w-screen h-screen fixed flex justify-center items-center">

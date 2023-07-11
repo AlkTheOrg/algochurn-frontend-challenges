@@ -1,9 +1,10 @@
 import { CommandPaletteApp } from './CommandPaletteApp';
 import './index.css'
+import { App as InfiniteAutoPlaySliderApp } from './InfiniteAutoPlaySlider';
 import { InsertTextInDocument } from './InsertTextInDocument'
 import { LightBoxGallery } from './LightBoxGallery';
-import { LinkPreviewerApp } from './LinkPreviewerApp';
-import { ReusableModalDemo } from './ReusableModal/ReusableModalDemo';
+import { App as LinkPreviewerApp } from './LinkPreviewerApp';
+import { App as ReusableModalDemo } from './ReusableModal/ReusableModalDemo';
 import { SelectAllCheckboxes } from './SelectAllCheckboxes';
 import { TypeWriterEffect } from './TypeWriterEffect';
 import { UseOutsideClickDemo } from './useOutsideClick';
@@ -17,7 +18,8 @@ function App() {
     CommandPaletteApp,
     LinkPreviewerApp,
     ReusableModalDemo,
-    LightBoxGallery
+    LightBoxGallery,
+    InfiniteAutoPlaySliderApp
   ]
   if (components.length === 0) return null;
   // const SelectedComponent = components[2];
