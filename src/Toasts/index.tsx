@@ -89,9 +89,41 @@ const ToastForm: FC<{
   )
 }
 
-const Toasts = () => {
+type RemoveToast = (id: number) => void;
+
+const Toast: FC<{ toast: Toast, removeToast: RemoveToast }> = ({
+    toast: { icon, title, position, id },
+    removeToast
+}) => {
+  return <li
+      className={`
+        rounded-md relative list-none flex justify-between py-6 px-8  mb-5
+        border border-gray-200
+        shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]
+      `}
+    >
+      <div className={`
+        cursor-pointer absolute right-2 top-1 border border-gray-500
+        hover:bg-gray-100 px-2 rounded-full
+      `}
+        onClick={() => removeToast(id)}
+      >
+        X
+      </div>
+      <div className="">{icon}</div>
+      <div className="">{title}</div>
+  </li>
+};
+
+const Toasts: FC<{ toasts: Toast[], removeToast: RemoveToast }> = ({
+    toasts, removeToast
+}) => {
   return (
-    <div className=""></div>
+    <div className="mr-5">
+      {
+        toasts.map(toast => <Toast removeToast={removeToast} key={toast.id} toast={toast} />)
+      }
+    </div>
   )
 }
 
@@ -124,7 +156,7 @@ export const App = () => {
 
   return (
     <div className="h-screen w-screen flex justify-center items-center">
-      <Toasts />
+      <Toasts toasts={toasts} removeToast={removeToast} />
       <ToastForm onSubmit={queueNewToast} />
     </div>
   )
