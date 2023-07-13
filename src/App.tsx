@@ -8,6 +8,7 @@ import { SelectAllCheckboxes } from './SelectAllCheckboxes';
 import { TypeWriterEffect } from './TypeWriterEffect';
 import { UseOutsideClickDemo } from './useOutsideClick';
 import { App as UseKeyPressApp } from './useKeyPress';
+import { App as UseLocalStorageApp } from './useLocalStorage';
 
 function App() {
   const components = [
@@ -19,7 +20,8 @@ function App() {
     LinkPreviewerApp,
     ReusableModalDemo,
     LightBoxGallery,
-    UseKeyPressApp
+    UseKeyPressApp,
+    UseLocalStorageApp
   ]
   if (components.length === 0) return null;
   // const SelectedComponent = components[2];
