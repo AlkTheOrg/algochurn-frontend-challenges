@@ -9,6 +9,7 @@ import { TypeWriterEffect } from './TypeWriterEffect';
 import { UseOutsideClickDemo } from './useOutsideClick';
 import { App as UseKeyPressApp } from './useKeyPress';
 import { App as UseLocalStorageApp } from './useLocalStorage';
+import { App as ToastsApp } from './Toasts';
 
 function App() {
   const components = [
@@ -21,7 +22,8 @@ function App() {
     ReusableModalDemo,
     LightBoxGallery,
     UseKeyPressApp,
-    UseLocalStorageApp
+    UseLocalStorageApp,
+    ToastsApp
   ]
   if (components.length === 0) return null;
   // const SelectedComponent = components[2];
