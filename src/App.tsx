@@ -7,6 +7,7 @@ import { App as ReusableModalDemo } from './ReusableModal/ReusableModalDemo';
 import { SelectAllCheckboxes } from './SelectAllCheckboxes';
 import { TypeWriterEffect } from './TypeWriterEffect';
 import { UseOutsideClickDemo } from './useOutsideClick';
+import { App as UseKeyPressApp } from './useKeyPress';
 
 function App() {
   const components = [
@@ -17,7 +18,8 @@ function App() {
     CommandPaletteApp,
     LinkPreviewerApp,
     ReusableModalDemo,
-    LightBoxGallery
+    LightBoxGallery,
+    UseKeyPressApp
   ]
   if (components.length === 0) return null;
   // const SelectedComponent = components[2];
