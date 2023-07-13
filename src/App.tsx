@@ -1,6 +1,5 @@
 import { CommandPaletteApp } from './CommandPaletteApp';
 import './index.css'
-import { App as InfiniteAutoPlaySliderApp } from './InfiniteAutoPlaySlider';
 import { InsertTextInDocument } from './InsertTextInDocument'
 import { LightBoxGallery } from './LightBoxGallery';
 import { App as LinkPreviewerApp } from './LinkPreviewerApp';
@@ -18,8 +17,7 @@ function App() {
     CommandPaletteApp,
     LinkPreviewerApp,
     ReusableModalDemo,
-    LightBoxGallery,
-    InfiniteAutoPlaySliderApp
+    LightBoxGallery
   ]
   if (components.length === 0) return null;
   // const SelectedComponent = components[2];
