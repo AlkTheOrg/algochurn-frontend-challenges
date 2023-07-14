@@ -2,7 +2,7 @@ import { FC } from "react";
 
 type Props = {
   name: string,
-  rest: unknown[]
+  [x: string]: unknown
 }
 
 // Taken from the solution

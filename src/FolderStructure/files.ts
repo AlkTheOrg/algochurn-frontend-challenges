@@ -1,4 +1,4 @@
-type File = {
+export type File = {
   name: string,
   isFolder: boolean,
   children?: Files
