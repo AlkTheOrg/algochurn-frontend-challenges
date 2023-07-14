@@ -7,7 +7,7 @@ const buttonClasses = "text-gray-500 font-bold shadow-lg px-4 py-3 rounded-md bo
 
 const loremIpsum = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quis facilis doloremque eaque nulla qui? Adipisci facere, eos iusto inventore ex ut nesciunt distinctio nisi quas qui atque accusantium soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quis facilis doloremque eaque nulla qui? Adipisci facere, eos iusto inventore ex ut nesciunt distinctio nisi quas qui atque accusantium soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quis facilis doloremque eaque nulla qui? Adipisci facere, eos iusto inventore ex ut nesciunt distinctio nisi quas qui atque accusantium soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quis facilis doloremque eaque nulla qui? Adipisci facere, eos iusto inventore ex ut nesciunt distinctio nisi quas qui atque accusantium soluta?";
 
-export const TypeWriterEffect = () => {
+export const App = () => {
   const [generationStatus, setGenerationStatus] = useState<GenerationStatus>('idle');
   const startGenerating = () => {
     if (generationStatus !== 'running') {

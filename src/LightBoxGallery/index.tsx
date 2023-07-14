@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { images } from './images';
 import { ReusableModal } from '../ReusableModal';
 
-export const LightBoxGallery = () => {
+export const App = () => {
   const [selectedImgIndex, setSelectedImgIndex] = useState<null | number>(null);
   return (
     <div className="bg-gradient-to-b from-violet-500 to-fuchsia-200 flex justify-center py-4">

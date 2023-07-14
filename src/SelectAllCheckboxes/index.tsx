@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import { checkboxList } from './list';
 import { Checkbox } from './Checkbox';
 
-export const SelectAllCheckboxes = () => {
+export const App = () => {
   const [items, setItems] = useState(checkboxList);
   const toggleCheckbox = (index: number) => {
     setItems([

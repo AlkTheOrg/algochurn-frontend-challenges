@@ -58,7 +58,7 @@ export const router = createBrowserRouter([
   },
 ]);
 
-export const CommandPaletteApp = () => {
+export const App = () => {
   return (<>
     <RouterProvider router={router} />
   </>);

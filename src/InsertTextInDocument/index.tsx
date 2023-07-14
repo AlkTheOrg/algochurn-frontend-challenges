@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Document } from './Document';
 import { TextInput } from './TextInput';
 
-export const InsertTextInDocument = () => {
+export const App = () => {
   const [textInput, setTextInput] = useState('');
   const [allTexts, setAllTexts] = useState<string[]>([]);
   const handleTextInputChange = (newText: string) => setTextInput(newText);

@@ -16,7 +16,7 @@ const useOutsideClick = (ref: RefObject<HTMLElement>, callback: () => void) => {
   }, [callback, ref]);
 }
 
-export const UseOutsideClickDemo = () => {
+export const App = () => {
   const centralDivRef = useRef<HTMLDivElement>(null);
   const callback = () => {
     alert('hello');
